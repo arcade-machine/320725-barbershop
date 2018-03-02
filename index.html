@@ -2,11 +2,123 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Барбершоп</title>
+    <title>Барбершоп "Бородинский"</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
-
+      <header class="main-header">
+          <a class="main-header-logo">
+            <img src="logo.jpg" alt="Лого">
+          </a>
+          <nav class="main-nav">
+              <ul>
+                  <li><a href="/info.html">Информация</a></li>
+                  <li><a href="/news.html">Новости</a></li>
+                  <li><a href="/price.html">Прайс-лист</a></li>
+                  <li><a href="/shop.html">Магазин</a></li>
+                  <li><a href="/contacts.html">Контакты</a></li>
+              </ul>
+              <div class="log-in-form">
+                <h2>Личный кабинет</h2>
+                <p>ВВедите пожалуйста свой логин и пароль</p>
+                <form class="login">Логин</form>
+                <form class="password">Пароль</form>
+                <form class="remmember-me">Запомните меня</form>
+                <form class="forgot-password">Я ЗАБЫЛ ПАРОЛЬ!</form>
+                <a href="login.html" class="enter">Войти</a>
+                <form class="exit">x</form>
+          </div>
+          </nav>
+      </header>
+      <main class="main-container">
+          <h1 visually-hidden>Барбер-шоп "Бородинский"</h1>
+          <section class="advantages">
+            <h2 visually-hidden>Преимущества</h2>
+            <ul>
+              <li class="advanteges-item">
+                  <h3>БЫСТРО</h3>
+                  <p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
+              </li>
+              <li class="advanteges-item-">
+                  <h3>КРУТО</h3>
+                  <p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ. МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
+              </li>
+               <li class="advanteges-item">
+                  <h3>ДОРОГО</h3>
+                  <p>НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?</p>
+              </li>
+            </ul>
+          </section>
+          
+          <section class="news">
+              <h2>НОВОСТИ</h2>
+              <ul>
+                  <li class="news-item">
+                      <p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
+                      <time datetime="2018-01-11">11 января</time>
+                  </li>
+                  <li class="news-item">
+                      <p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
+                      <time datetime="2018-01-18">18 января</time>
+                  </li>
+              </ul>
+              <a class="button" href="/news.html">ВСЕ НОВОСТИ</a>
+          </section>
+          <section class="photos">
+              <h2>ФОТОГАЛЕРЕЯ</h2>
+              <img src="photo.jpg" alt="Фото">
+              <span class="button gallery-button gallery-button-back">Назад</span>
+              <span class="button gallery-button gallery-button-next">Вперед</span>
+          </section>
+          <section class="contacts">
+              <h2>КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+              <p>
+                 БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+                 АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
+                 ТЕЛЕФОН: +7 (495) 666-02-66
+              </p>
+              <p>
+                 ВРЕМЯ РАБОТЫ:<br>
+                 ПН—ПТ: С 10:00 ДО 22:00<br>
+                 СБ—ВС: С 10:00 ДО 19:00
+              </p>
+              <a href="/map.html">КАК ПРОЕХАТЬ</a>
+              <button>ОБРАТНАЯ СВЯЗЬ</button>
+          </section>
+          <section class="booking">
+              <h2>ЗАПИСАТЬСЯ</h2>
+              <p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
+                    <!--Тут будет форма, но попробовал набить так
+                        <h3>ДАТА</h3>
+                        <form class="date">Дата</form>
+                        <h3>ВРЕМЯ</h3>
+                        <form class="time">Время</form>
+                        <h3>ВАШЕ ИМЯ</h3>
+                        <form class="name">Имя</form>
+                        <h3>ТЕЛЕФОН</h3>
+                        <form class="phone">Телефон</form>
+                        <button>Отправить</button>
+                    -->
+          </section>
+      </main>
+      <footer class="main-footer">
+          <p class="footer-contacts">БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+             АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
+             <button>КАК НАС НАЙТИ?</button><br>
+             ТЕЛЕФОН: +7 (495) 666-02-66</p>
+          <div class="footer-social">
+            <b>ДАВАЙТЕ ДРУЖИТЬ!</b>
+            <a class="footer-social-button" href="VK.ru">VK</a>
+            <a class="footer-social-button" href="fb.com">Facebook</a>
+            <a class="footer-social-button" href="instagram.com">Instagram</a>
+          </div>
+          <section class="footer-copiright">
+            <b>РАЗРАБОТАНО:</b>
+            <a class="footer-copiright-buttom" href="https://htmlacademy.ru/">html academy</a>
+          </section>
+      </footer>
+      <section class="modal modal-map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <span class="modal-close">x</span>
+      </section>
   </body>
 </html>
